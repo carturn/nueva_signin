@@ -50,8 +50,7 @@ int main(int argc, char* argv[]){
 		Mat cv_gray;
 		cvtColor(cv_image, cv_gray, CV_RGB2GRAY);
 
-		imshow("Image", cv_image);
-		imshow("Grayscale", cv_gray);
+		imshow("Please display QR code", cv_image);
 		
 		int img_width = cv_gray.size().width;
 		int img_height = cv_gray.size().height;
