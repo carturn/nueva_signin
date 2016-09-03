@@ -47,7 +47,6 @@ int main(int argc, char* argv[]){
 		scanner.scan(zbar_image);
 
 		for(Image::SymbolIterator symbol = zbar_image.symbol_begin(); symbol != zbar_image.symbol_end(); ++symbol){
-			cout << symbol->get_type() << "\t";
 			cout << symbol->get_data() << "\n";
 		}
 		
