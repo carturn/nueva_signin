@@ -22,6 +22,8 @@ int main(int argc, char* argv[]){
 
 	VideoCapture capture;
 	capture = VideoCapture(0);
+	capture.set(CV_CAP_PROP_FRAME_WIDTH, 640);
+	capture.set(CV_CAP_PROP_FRAME_HEIGHT, 480);
 
 	// Image scanning loop
 	while(true){
