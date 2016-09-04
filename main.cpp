@@ -25,6 +25,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <unistd.h>
+#include <curl/curl.h>
 
 #include <zbar.h>
 
